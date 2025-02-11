@@ -1,0 +1,208 @@
+html {
+    font-size: 1px;
+    font-family: "Arial", "Roboto Slab";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960rem;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_bg {
+    background-color: #1f1f56;
+    padding: 25rem 0;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.header_menu a {
+    font-size: 14rem;
+    letter-spacing: 2rem;
+    color: #b1b1d2;
+    text-decoration: none;
+    margin-right: 25rem;
+}
+
+.header a:hover {
+    color: #fd8300;
+}
+
+.header_imgs a {
+    margin-left: 25rem;
+    background-image: url(../images/icos.png);
+    display: inline-block;
+}
+
+.fb {
+    width: 11px;
+    height: 19px;
+    background-position: -1px 0;
+}
+
+.fb:hover {
+    background-position: 0 -27px;
+}
+
+.tw {
+    width: 19px;
+    height: 16px;
+    background-position: -17px -2px;
+}
+
+.tw:hover {
+    background-position: -16px -29px;
+}
+
+.inst {
+    width: 20px;
+    height: 20px;
+    background-position: -40px 0px;
+}
+
+.inst:hover {
+    background-position: -40px -26px;
+}
+
+.header_content {
+    padding: 30rem 0;
+}
+
+.header_content a:hover {
+    text-decoration: underline;
+}
+
+.contacts a {
+    font-size: 18rem;
+    line-height: 24rem;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    display: block;
+    text-decoration: none;
+}
+
+.contacts2 a {
+    font-size: 18rem;
+    line-height: 24rem;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    display: block;
+    text-decoration: none;
+}
+
+.button a {
+    display: inline-block;
+    padding: 15rem;
+    box-sizing: border-box;
+    font-size: 16rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 250rem;
+    border: 2px solid #fd8300;
+    color: #25252c;
+    font-weight: bold;
+}
+
+
+.button a:hover {
+    background-color: #fd8300;
+    text-decoration: none;
+}
+
+.sale {
+    background-image: url(../images/hata-.png);
+    background-size: cover;
+}
+
+.big {
+    font-size: 30rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding: 35rem 0 20rem;
+}
+
+.smol {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.price {
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+    padding: 20rem 0 35rem;
+}
+
+.smol_price {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.smol_price sup {
+    font-size: 0.7em;
+}
+
+.content section h1 {
+    font-size: 30rem;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.content section p {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #666;
+    font-family: "Arial";
+}
+
+.content section a {
+    font-size: 14rem;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.content section a:hover{
+    text-decoration: none;
+}
+
+.project{
+    font-size: 32rem;
+}
+
+.aside{
+    font-size: 32rem;
+}
