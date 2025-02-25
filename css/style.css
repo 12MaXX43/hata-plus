@@ -15,9 +15,22 @@ html {
 
 }
 
+.page{
+    padding: 30rem 0 40rem;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    column-gap: 28px;
+}
+
+.column{
+    min-width: 219rem;
 }
 
 .header_bg {
@@ -106,7 +119,12 @@ ul {
     text-decoration: none;
 }
 
+.button{
+    text-align: right;
+}
+
 .button a {
+    min-width: 200rem;
     display: inline-block;
     padding: 15rem;
     box-sizing: border-box;
@@ -194,6 +212,8 @@ ul {
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
+    margin-top: 15rem;
+    display: inline-block;
 }
 
 .content a:hover {
@@ -202,6 +222,25 @@ ul {
 
 .project {
     font-size: 32rem;
+    position: relative;
+}
+
+.project a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.project:hover h3{
+    text-decoration: underline;
+}
+
+hr{
+    margin: 30px 0;
+    border-width: 0;
+    border-top: 1px solid #e4e4ec;
 }
 
 .aside {
@@ -209,7 +248,7 @@ ul {
 }
 
 .projects h2 {
-    
+    margin-bottom: 25rem;
     font-size: 24rem;
     line-height: 24rem;
     color: #24242b;
@@ -229,6 +268,62 @@ ul {
     color: #9999a6;
 }
 
-.menu{
-    
+.aside p {
+    font-size: 16rem;
+    line-height: 24rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    border-radius: 3px 3px 0 0;
+    background-color: #1f1f56;
+    padding: 10rem 15rem;
+}
+
+.menu a {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #25252c;
+    text-decoration: none;
+    background-color: #e4e4ec;
+    display: block;
+    padding: 10rem 15rem;
+    border-top: #cdcddd solid 1rem;
+    position: relative;
+}
+
+.menu a::after{
+    content: "";
+    border-left: 2px solid #666;
+    border-top: 2px solid #666;
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(135deg);
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    transition: transform .2s;
+}
+
+.menu a:hover::after{
+    transform: rotate(225deg);
+    border-color: white;
+}
+
+.menu a:hover {
+    background-color: #fd8300;
+    color: #ffffff;
+}
+
+.sub_menu a {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #666666;
+    text-decoration: none;
+    background-color: #e4e4ec;
+    padding: 10rem 30rem;
+}
+
+.sub_menu a:hover {
+    background-color: #cecedd;
 }
