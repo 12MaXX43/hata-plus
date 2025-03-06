@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 html {
     font-size: 1px;
     font-family: "Arial", "Roboto Slab";
@@ -15,7 +26,7 @@ html {
 
 }
 
-.page{
+.page {
     padding: 30rem 0 40rem;
 }
 
@@ -24,12 +35,12 @@ html {
     justify-content: space-between;
 }
 
-.row{
+.row {
     display: flex;
     column-gap: 28px;
 }
 
-.column{
+.column {
     min-width: 219rem;
 }
 
@@ -57,38 +68,38 @@ ul {
 
 .header_imgs a {
     margin-left: 25rem;
-    background-image: url(../images/icos.png);
+    background-image: url(../images/hata_plus_sprites.png   );
     display: inline-block;
 }
 
 .fb {
-    width: 11px;
+    width: 10px;
     height: 19px;
-    background-position: -1px 0;
+    background-position: 0px -22px;
 }
 
 .fb:hover {
-    background-position: 0 -27px;
+    background-position: 0 0px;
 }
 
 .tw {
     width: 19px;
     height: 16px;
-    background-position: -17px -2px;
+    background-position: -13px -22px;
 }
 
 .tw:hover {
-    background-position: -16px -29px;
+    background-position: -13px 0px;
 }
 
 .inst {
     width: 20px;
     height: 20px;
-    background-position: -40px 0px;
+    background-position: -36px -22px;
 }
 
 .inst:hover {
-    background-position: -40px -26px;
+    background-position: -36px 0px;
 }
 
 .header_content {
@@ -105,21 +116,58 @@ ul {
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
-    display: block;
+    display: inline-block;
     text-decoration: none;
+    position: relative;
+    padding-left: 30rem;
 }
 
-.contacts2 a {
-    font-size: 18rem;
-    line-height: 24rem;
-    color: #25252c;
-    font-weight: bold;
-    font-family: "Arial";
-    display: block;
-    text-decoration: none;
+.contacts a:before {
+    content: "";
+    background-image: url(../images/hata_plus_sprites.png);
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+    top: 3rem;
 }
 
-.button{
+.tel::before {
+    width: 16px;
+    height: 17px;
+    background-position: 60px 0;
+}
+
+.tel:hover::before {
+    background-position: 60px -23px;
+}
+
+.tel2::before {
+    width: 16px;
+    height: 0px;
+    background-position: 60px -23px;
+}
+
+.email::before {
+    width: 17px;
+    height: 13px;
+    background-position: -80px 0px;
+}
+
+.email:hover::before {
+    background-position: -80px -23px;
+}
+
+.skype::before {
+    width: 18px;
+    height: 19px;
+    background-position: -100px 0px;
+}
+
+.skype:hover::before {
+    background-position: -100px -23px;
+}
+
+.button {
     text-align: right;
 }
 
@@ -225,7 +273,7 @@ ul {
     position: relative;
 }
 
-.project a{
+.project a {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -233,11 +281,11 @@ ul {
     right: 0;
 }
 
-.project:hover h3{
+.project:hover h3 {
     text-decoration: underline;
 }
 
-hr{
+hr {
     margin: 30px 0;
     border-width: 0;
     border-top: 1px solid #e4e4ec;
@@ -245,6 +293,12 @@ hr{
 
 .aside {
     font-size: 32rem;
+
+}
+
+.aside nav {
+    position: sticky;
+    top: 1px;
 }
 
 .projects h2 {
@@ -291,7 +345,7 @@ hr{
     position: relative;
 }
 
-.menu a::after{
+.menu a::after {
     content: "";
     border-left: 2px solid #666;
     border-top: 2px solid #666;
@@ -305,7 +359,7 @@ hr{
     transition: transform .2s;
 }
 
-.menu a:hover::after{
+.menu a:hover::after {
     transform: rotate(225deg);
     border-color: white;
 }
