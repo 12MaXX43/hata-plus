@@ -341,11 +341,14 @@ hr {
     background-color: #e4e4ec;
     display: block;
     padding: 10rem 15rem;
-    border-top: #cdcddd solid 1rem;
     position: relative;
 }
 
-.menu a::after {
+.menu>li:not(:first-child){
+    border-top: #cdcddd solid 1rem;
+}
+
+.menu>li>a::after {
     content: "";
     border-left: 2px solid #666;
     border-top: 2px solid #666;
@@ -367,6 +370,14 @@ hr {
 .menu a:hover {
     background-color: #fd8300;
     color: #ffffff;
+}
+
+.menu li:hover .sub_menu{
+    display: block;
+}
+
+.sub_menu{
+    display: none;
 }
 
 .sub_menu a {
