@@ -62,7 +62,7 @@ ul {
     margin-right: 25rem;
 }
 
-.header a:hover {
+.contacts a:hover {
     color: #fd8300;
 }
 
@@ -186,7 +186,6 @@ ul {
     font-weight: bold;
 }
 
-
 .button a:hover {
     background-color: #fd8300;
     text-decoration: none;
@@ -239,6 +238,10 @@ ul {
     font-size: 0.7em;
 }
 
+.content{
+    max-width: 670rem;
+}
+
 .content h1 {
     font-size: 30rem;
     color: #24242b;
@@ -251,7 +254,7 @@ ul {
     line-height: 24rem;
     color: #666;
     font-family: "Arial";
-    padding-top: 5rem;
+    margin-top: 10rem;
 }
 
 .content a {
@@ -344,7 +347,7 @@ hr {
     position: relative;
 }
 
-.menu>li:not(:first-child){
+.menu>li:not(:first-child) {
     border-top: #cdcddd solid 1rem;
 }
 
@@ -372,11 +375,11 @@ hr {
     color: #ffffff;
 }
 
-.menu li:hover .sub_menu{
+.menu li:hover .sub_menu {
     display: block;
 }
 
-.sub_menu{
+.sub_menu {
     display: none;
 }
 
@@ -391,4 +394,37 @@ hr {
 
 .sub_menu a:hover {
     background-color: #cecedd;
+}
+
+footer{
+    background-color: #ededf5;
+}
+
+footer .wrapper{
+    padding: 35rem 0 20rem;
+}
+
+footer a {
+    font-size: 14rem;
+    line-height: 26rem;
+    color: #666666;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 13rem;
+    line-height: 18rem;
+    color: #9999a6;
+    font-family: "Arial";
+}
+
+.copyright{
+    background-color: #dcdce6;
+    padding: 15rem 0;
+    text-align: center;
 }
