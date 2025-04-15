@@ -18,7 +18,9 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
 
 .wrapper {
     margin: 0 auto;
@@ -46,12 +48,26 @@ html {
 
 .header_bg {
     background-color: #1f1f56;
-    padding: 25rem 0;
+    /* padding: 25rem 0; */
+    position: relative;
+}
+
+.header_menu li:hover .menu_head {
+    display: block;
+
+}
+
+.header_menu>li {
+    padding: 18rem 0;
+
 }
 
 ul {
     list-style: none;
+}
 
+.header_menu {
+    column-gap: 25rem;
 }
 
 .header_menu a {
@@ -59,7 +75,66 @@ ul {
     letter-spacing: 2rem;
     color: #b1b1d2;
     text-decoration: none;
-    margin-right: 25rem;
+}
+
+
+.sub_menu_head>li:not(:first-child) {
+    /* padding: 10rem 30rem;*/
+    width: 125rem;
+    border-top: 1px solid #cecedd;
+}
+
+.sub_menu_head {
+    position: absolute;
+    left: 100%;
+    top: 0rem;
+    padding-left: 5rem;
+}
+
+.header_menu li{
+    position: relative;
+}
+
+.header_menu .menu_head a {
+    font-size: 12rem;
+    padding: 10px;
+}
+
+
+
+.header_menu .menu_head>li>a::after {
+    right: 10px;
+    top: 14rem;
+}
+
+.menu_head {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: -10rem;
+    width: 125rem;
+    padding-top: 5px;
+}
+
+.menu_head li {
+    position: relative;
+}
+
+.menu_head>li:first-child>a{
+    border-radius: 3rem 3rem 0 0;
+}
+
+.menu_head>li:last-child>a{
+    border-radius: 0 0 3rem 3rem;
+}
+
+.sub_menu_head li:first-child a{
+    border-radius: 3rem 3rem 0 0;
+}
+
+.sub_menu_head li:last-child a{
+    border-radius: 0 0 3rem 3rem;
 }
 
 .contacts a:hover {
@@ -70,6 +145,10 @@ ul {
     margin-left: 25rem;
     background-image: url(../images/hata_plus_sprites.png   );
     display: inline-block;
+}
+
+.header_imgs{
+    padding-top: 18rem;
 }
 
 .fb {
@@ -238,7 +317,7 @@ ul {
     font-size: 0.7em;
 }
 
-.content{
+.content {
     max-width: 670rem;
 }
 
@@ -296,7 +375,6 @@ hr {
 
 .aside {
     font-size: 32rem;
-
 }
 
 .aside nav {
@@ -336,15 +414,23 @@ hr {
     padding: 10rem 15rem;
 }
 
+.aside li:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
 .menu a {
     font-size: 14rem;
-    line-height: 24rem;
     color: #25252c;
     text-decoration: none;
-    background-color: #e4e4ec;
     display: block;
-    padding: 10rem 15rem;
+    padding: 15rem 15rem;
     position: relative;
+}
+
+.menu a,
+.sub_menu a {
+    background-color: #e4e4ec;
+
 }
 
 .menu>li:not(:first-child) {
@@ -385,22 +471,100 @@ hr {
 
 .sub_menu a {
     font-size: 14rem;
-    line-height: 24rem;
     color: #666666;
     text-decoration: none;
     background-color: #e4e4ec;
-    padding: 10rem 30rem;
+    padding: 15rem 30rem;
 }
 
 .sub_menu a:hover {
     background-color: #cecedd;
 }
 
-footer{
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td:first-child {
+    width: 33%;
+}
+
+.table td:not(:first-child) {
+    text-align: center;
+}
+
+.table td:last-child {
+    text-align: right;
+}
+
+.table tr:not(:first-child) {
+    border-top: 1px solid #cecedd;
+
+}
+
+.table td:not(:first-child) {
+    border-left: 1px solid #cecedd;
+
+}
+
+.table thead tr:not(:first-child) {
+    border-top: 1px solid #274569;
+
+}
+
+.table tr:not(:first-child) th,
+.table th:not(:last-child) {
+    border-right: 1px solid #274569;
+
+}
+
+
+.table tr:first-child th:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+.table tr:first-child th:last-child {
+    border-radius: 0 3rem 0 0;
+}
+
+.table tr:last-child td:last-child {
+    border-radius: 0 0 3rem 0;
+}
+
+.table tr:last-child td:first-child {
+    border-radius: 0 0 0 3rem;
+}
+
+.table th {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    background-color: #1f1f56;
+    padding: 5rem 20rem;
+}
+
+.table td {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #666666;
+    font-family: "Arial";
+    background-color: #e4e4ec;
+    padding: 7.5rem 20rem;
+}
+
+.table tr:hover td {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+footer {
     background-color: #ededf5;
 }
 
-footer .wrapper{
+footer .wrapper {
     padding: 35rem 0 20rem;
 }
 
@@ -423,7 +587,7 @@ footer p {
     font-family: "Arial";
 }
 
-.copyright{
+.copyright {
     background-color: #dcdce6;
     padding: 15rem 0;
     text-align: center;
