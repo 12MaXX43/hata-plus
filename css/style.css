@@ -263,11 +263,17 @@ ul {
     border: 2px solid #fd8300;
     color: #25252c;
     font-weight: bold;
+    transition: .2s;
 }
 
 .button a:hover {
     background-color: #fd8300;
     text-decoration: none;
+    box-shadow: 1px 3px 5px 3px #1f1f56, 
+    5px 5px 7px 5px gray,
+    inset 1px 3px 7px 3px #ffc282;
+    /* border: 2px solid #fff; */
+
 }
 
 .sale {
