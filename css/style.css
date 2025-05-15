@@ -70,6 +70,10 @@ ul {
     column-gap: 25rem;
 }
 
+.header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 .header_menu a {
     font-size: 14rem;
     letter-spacing: 2rem;
@@ -236,6 +240,27 @@ ul {
     background-position: -80px -23px;
 }
 
+div a.email {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+div a.email:hover {
+    text-decoration: none;
+}
+
+div a:hover {
+    text-decoration: underline;
+}
+
+div a.skype {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
 .skype::before {
     width: 18px;
     height: 19px;
@@ -269,9 +294,9 @@ ul {
 .button a:hover {
     background-color: #fd8300;
     text-decoration: none;
-    box-shadow: 1px 3px 5px 3px #1f1f56, 
-    5px 5px 7px 5px gray,
-    inset 1px 3px 7px 3px #ffc282;
+    box-shadow: 1px 3px 5px 3px #1f1f56,
+        5px 5px 7px 5px gray,
+        inset 1px 3px 7px 3px #ffc282;
     /* border: 2px solid #fff; */
 
 }
@@ -500,17 +525,17 @@ h1 {
     color: #666666;
     font-family: "Arial";
     margin: 25rem 0;
-} 
+}
 
 .table_main a {
-    font-size:   14rem;
+    font-size: 14rem;
     text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
 }
 
-.table_main a:hover{
+.table_main a:hover {
     text-decoration: none;
 }
 
@@ -591,6 +616,187 @@ table {
 .table tr:hover td {
     background-color: #fd8300;
     color: #fff;
+}
+
+
+
+.forms h2 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.contacts-1 {
+    padding-bottom: 25rem;
+}
+
+.contacts-1 p {
+    padding-top: 10rem;
+}
+
+.contacts-1 p {
+    font-size: 14rem;
+    color: #666;
+    font-family: "Arial";
+}
+
+.contacts-1 h1 {
+    font-size: 24rem;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    /* padding-top: 5rem; */
+}
+
+.contacts-1 h2 {
+    font-size: 14rem;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    /* padding-top: 5rem; */
+    /* padding-bottom: ; */
+}
+
+.contacts-1 a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+    padding: 25rem 0;
+}
+
+.map {
+    min-width: 45%;
+    max-width: 470px;
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.map iframe {
+    border: none;
+    width: 100%;
+    height: 360px;
+    margin-top: -60px;
+}
+
+.content-1 {
+    margin-top: 50px;
+    justify-content: space-between;
+    column-gap: 28px;
+}
+
+.int {
+    padding: 5px;
+    display: block;
+}
+
+.int *:focus {
+    outline: none;
+    border: 1px solid #fd8300;
+
+}
+
+.int input,
+textarea {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+}
+
+.int *::placeholder {
+    font-size: 13rem;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+}
+
+.intname {
+    border-radius: 3px;
+}
+
+.int textarea {
+    padding: 10rem;
+    width: 100%;
+    resize: vertical;
+    min-height: 105px;
+    max-height: 150px;
+}
+
+.intsend input {
+    padding: 11px 0;
+    min-width: 140px;
+    /* height: 41px; */
+    border-radius: 21px;
+    background-color: #fd8300;
+    outline: none;
+    border: 2px solid #fd8300;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
+    transition: 0.1s;
+}
+
+.intsend {
+    margin-right: 25px;
+    display: inline;
+}
+
+.intsend input:hover {
+    background-color: #fff;
+    color: #fd8300;
+    cursor: pointer;
+}
+
+.intcheck {
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.intcheck input {
+    appearance: none;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: -1px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #c5c5d4;
+}
+
+.intcheck input:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    width: 4px;
+    height: 8px;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+
+}
+
+.intcheck input:checked:after {
+    border-color: #1f1f56;
+    transform: rotate(45deg);
+}
+
+.forms {
+    width: 100%;
+}
+
+.forms td input {
+    width: 100%;
 }
 
 footer {
