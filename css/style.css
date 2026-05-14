@@ -840,6 +840,12 @@ textarea {
 
 footer {
     background-color: #ededf5;
+    text-align: center;
+}
+
+footer .flex {
+    justify-content: center;
+    row-gap: 15px;
 }
 
 footer .wrapper {
@@ -881,6 +887,27 @@ footer p {
     }
 }
 
+@media screen and (min-width: 743px) {
+    .page {
+        flex-wrap: nowrap;
+    }
+
+    .aside {
+        width: 219px;
+    }
+
+}
+
+@media screen and (min-width: 906px) {
+    footer .flex {
+        justify-content: space-between;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+
 @media screen and (min-width: 990px) {
 
     .flex,
@@ -888,18 +915,7 @@ footer p {
         flex-wrap: nowrap;
     }
 
-    .projects h2{
+    .projects h2 {
         text-align: left;
     }
-}
-
-@media screen and (min-width: 743px) {
-    .page {
-        flex-wrap: nowrap;
-    }
-
-    .aside{
-        width: 219px;
-    }
-
 }
