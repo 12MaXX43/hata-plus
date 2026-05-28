@@ -98,6 +98,50 @@ html {
     top: 20px;
 }
 
+.header_hamburger span::before {
+    display: none;
+}
+
+.header_hamburger span::after {
+    transform: rotate(90deg);
+    top: 0px;
+    background-color: #fd8300;
+}
+
+.header_hamburger span {
+    top: 10px;
+    transform: rotate(45deg);
+    background-color: #fd8300;
+}
+
+.menu_header{
+    background-color: #1f1f56;
+}
+
+.menu_header li a {
+    font-size: 30px;
+}
+
+.menu_header li {
+    padding: 20px 0;
+
+}
+
+.menu_header.header_menu {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 55px;
+    left: 0;
+    z-index: 1;
+    padding-left: 15px;
+}
+
+.bodyblock {
+    overflow: hidden;
+}
+
 ul {
     list-style: none;
 }
@@ -145,12 +189,14 @@ ul {
     padding: 10px;
 }
 
-
-
 .header_menu .menu_head>li>a::after {
     right: 10px;
     top: 14rem;
 }
+
+
+
+.header_hamburger {}
 
 .menu_head {
     display: none;
@@ -396,6 +442,13 @@ div a.skype {
     font-family: "Roboto Slab";
 }
 
+h1 span {
+    display: block;
+    font-size: 30rem;
+}
+
+
+
 .content p {
     font-size: 14rem;
     line-height: 24rem;
@@ -533,6 +586,7 @@ hr {
 
 .menu li:hover .sub_menu {
     display: block;
+    z-index: 1;
 }
 
 .sub_menu {
@@ -875,6 +929,12 @@ footer p {
     background-color: #dcdce6;
     padding: 15rem 0;
     text-align: center;
+}
+
+@media screen and (min-width: 380px) {
+    h1 span {
+        display: inline;
+    }
 }
 
 @media screen and (min-width: 664px) {
