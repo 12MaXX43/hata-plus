@@ -114,7 +114,7 @@ html {
     background-color: #fd8300;
 }
 
-.menu_header{
+.menu_header {
     background-color: #1f1f56;
 }
 
@@ -618,6 +618,7 @@ h1 {
     color: #666666;
     font-family: "Arial";
     margin: 25rem 0;
+    line-height: 21rem;
 }
 
 .table_main a {
@@ -630,11 +631,30 @@ h1 {
 
 .table_main a:hover {
     text-decoration: none;
+
 }
 
-table {
+.table {
+    overflow-x: scroll;
+}
+
+.table table {
     border-collapse: collapse;
-    width: 100%;
+    width: 690px;
+}
+
+.table::-webkit-scrollbar {
+    /* display: none; */
+    height: 2px;
+    background-color: #1f1f56;
+}
+
+.table::-webkit-scrollbar-thumb {
+    background-color: #fd8300;
+}
+
+.table_price {
+    width: 17%;
 }
 
 .table td:first-child {
@@ -944,6 +964,16 @@ footer p {
 
     .header_menu {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .table table {
+        width: 100%;
+    }
+
+    .table {
+        overflow-x: hidden;
     }
 }
 
