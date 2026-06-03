@@ -8,7 +8,6 @@
     font-display: swap;
 }
 
-
 html {
     font-size: 1px;
     font-family: "Arial", "Roboto Slab";
@@ -21,14 +20,12 @@ html {
     font-size: 16px;
 }
 
-
 .wrapper {
     margin: 0 auto;
     max-width: 960rem;
     padding: 0 15rem;
     box-sizing: content-box;
 }
-
 
 .flex {
     display: flex;
@@ -124,7 +121,6 @@ html {
 
 .menu_header li {
     padding: 20px 0;
-
 }
 
 .menu_header.header_menu {
@@ -166,9 +162,7 @@ ul {
     text-decoration: none;
 }
 
-
 .sub_menu_head>li:not(:first-child) {
-    /* padding: 10rem 30rem;*/
     width: 125rem;
     border-top: 1px solid #cecedd;
 }
@@ -193,10 +187,6 @@ ul {
     right: 10px;
     top: 14rem;
 }
-
-
-
-.header_hamburger {}
 
 .menu_head {
     display: none;
@@ -343,7 +333,6 @@ div a.skype {
     text-decoration: underline;
 }
 
-
 .skype::before {
     width: 18px;
     height: 19px;
@@ -380,8 +369,6 @@ div a.skype {
     box-shadow: 1px 3px 5px 3px #1f1f56,
         5px 5px 7px 5px gray,
         inset 1px 3px 7px 3px #ffc282;
-    /* border: 2px solid #fff; */
-
 }
 
 .sale {
@@ -446,8 +433,6 @@ h1 span {
     display: block;
     font-size: 30rem;
 }
-
-
 
 .content p {
     font-size: 14rem;
@@ -553,7 +538,6 @@ hr {
 .menu a,
 .sub_menu a {
     background-color: #e4e4ec;
-
 }
 
 .menu>li:not(:first-child) {
@@ -631,7 +615,6 @@ h1 {
 
 .table_main a:hover {
     text-decoration: none;
-
 }
 
 .table {
@@ -644,7 +627,6 @@ h1 {
 }
 
 .table::-webkit-scrollbar {
-    /* display: none; */
     height: 2px;
     background-color: #1f1f56;
 }
@@ -671,25 +653,20 @@ h1 {
 
 .table tr:not(:first-child) {
     border-top: 1px solid #cecedd;
-
 }
 
 .table td:not(:first-child) {
     border-left: 1px solid #cecedd;
-
 }
 
 .table thead tr:not(:first-child) {
     border-top: 1px solid #274569;
-
 }
 
 .table tr:not(:first-child) th,
 .table th:not(:last-child) {
     border-right: 1px solid #274569;
-
 }
-
 
 .table tr:first-child th:first-child {
     border-radius: 3px 0 0 0;
@@ -731,8 +708,6 @@ h1 {
     color: #fff;
 }
 
-
-
 .forms h2 {
     margin-bottom: 10px;
     font-size: 14px;
@@ -761,7 +736,6 @@ h1 {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    /* padding-top: 5rem; */
 }
 
 .contacts-1 h2 {
@@ -769,8 +743,6 @@ h1 {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    /* padding-top: 5rem; */
-    /* padding-bottom: ; */
 }
 
 .contacts-1 a {
@@ -802,6 +774,18 @@ h1 {
     margin-top: 50px;
     justify-content: space-between;
     column-gap: 28px;
+}
+
+.contacts-1 .flex {
+    justify-content: center;
+    text-align: center;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.contacts-1 h1 {
+    text-align: center;
+
 }
 
 .int {
@@ -845,7 +829,6 @@ textarea {
 .intsend input {
     padding: 11px 0;
     min-width: 140px;
-    /* height: 41px; */
     border-radius: 21px;
     background-color: #fd8300;
     outline: none;
@@ -896,7 +879,6 @@ textarea {
     height: 8px;
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
-
 }
 
 .intcheck input:checked:after {
@@ -957,6 +939,17 @@ footer p {
     }
 }
 
+@media screen and (min-width: 497px) {
+    .contacts-1 .flex {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .contacts-1 h1 {
+        text-align: center;
+    }
+}
+
 @media screen and (min-width: 664px) {
     .hamburger {
         display: none;
@@ -999,13 +992,20 @@ footer p {
 }
 
 @media screen and (min-width: 990px) {
-
     .flex,
     .row {
         flex-wrap: nowrap;
     }
 
     .projects h2 {
+        text-align: left;
+    }
+
+    .contacts-1 .flex {
+        justify-content: space-between;
+    }
+
+    .contacts-1 h1 {
         text-align: left;
     }
 }
