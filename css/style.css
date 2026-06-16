@@ -198,6 +198,50 @@ ul {
     padding-top: 5px;
 }
 
+.logo {
+    z-index: 1;
+}
+
+.logo:hover {
+    animation: dementia 2s 1;
+}
+
+@keyframes dementia {
+    10% {
+        filter: contrast(200%);
+        transform: scale(1.2) rotate(10deg);
+    }
+
+    14% {
+        filter: contrast(50%);
+        transform: scale(1.2) rotate(-10deg);
+    }
+
+    18% {
+        filter: contrast(200%);
+        transform: scale(1.2) rotate(10deg);
+    }
+
+    22% {
+        filter: contrast(50%);
+        transform: scale(1.2) rotate(-10deg);
+    }
+
+    26% {
+        filter: contrast(200%);
+        transform: scale(1.2) rotate(10deg);
+    }
+
+    30% {
+        filter: contrast(50%);
+        transform: scale(1.2) rotate(-10deg);
+    }
+
+    34% {
+        filter: contrast(100%);
+    }
+}
+
 .menu_head li {
     position: relative;
 }
@@ -818,7 +862,7 @@ textarea {
     margin-right: 10px;
 }
 
-.send{
+.send {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -961,7 +1005,7 @@ footer p {
         text-align: center;
     }
 
-    .send{
+    .send {
         justify-content: start;
     }
 }
